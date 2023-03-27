@@ -1,0 +1,60 @@
+int main(){
+    char Zminna;
+    int opcja;
+    float x, y;
+    printf("\nProgram obczysla");
+    printf("\nA)Prędkość w m/sek i km/godz");
+    printf("\nB) Miara kąta w stopniach i radianach");
+    printf("\n Napisz A lub B ");
+    scanf("%c",&Zminna);
+    switch(Zminna){
+    case 'A':
+        printf("\nJak chcesz przetworzyc dane ");
+        printf("\n1. m/sek -> km/ godz");
+        printf("m\n/2. km/godz -> m/sek");
+        printf("\nWprowadz 1 albo 2 ");
+        scanf("%d",&opcja);
+        switch (opcja){
+            case 1:
+                printf("\nIle m/sek chcesz przetworzycz ");
+                scanf("%f",&x);
+                y=3.6*x;
+                printf("\n%f m/sek -> %f km/ godz ",x,y);
+                break;
+            case 2:
+                printf("\nIle km/godz chcesz przetworzycz ");
+                scanf("%f",&x);
+                if (x!=0) y=3.6/x;
+                else y=0;
+                printf("\n%f km/godz -> %f m/sek ",x,y);
+                break;
+            default: printf("\nError");
+        }
+    break;
+
+    case 'B':
+        printf("\nJak chcesz przetworzyc dane ");
+        printf("\n1. stopnie -> radiany");
+        printf("m\n/2. radiany -> stopnie");
+        printf("\nWprowadz 1 albo 2");
+        scanf("%d",&opcja);
+        switch (opcja){
+            case 1:
+                printf("\nIle stopni chcesz przetworzycz ");
+                scanf("%f",&x);
+                y=x*(M_PI/180);
+                printf("\n%f stopnie -> %f radiany ",x,y);
+                break;
+            case 2:
+                printf("\nIle radian chcesz przetworzycz ");
+                scanf("%f",&x);
+                y=x*(180./M_PI);
+                printf("\n%f radiany -> %f stopnie ",x,y);
+                break;
+            default: printf("\nError");}
+    break;
+
+    default: printf("\nWprowadziono zly dany");
+    }
+return 0;
+}
