@@ -1,0 +1,103 @@
+//Dane: n-dowolnych liczb. Wczytac podane przez uzytkownika: n, oraz liczby. Obliczyé Srednia arytm. wszystkich liczb, iloczyn Vx dla x>0. Wyswietlic wyniki.
+/* #include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main(){
+    int N, i;
+    float wartosc, serednia, iloczyn, sum;
+    printf("\nIle liczb ");
+    scanf("%d",&N);
+    sum = 0;
+    iloczyn = 1;
+    if (N<1){
+        printf("Wprowadzono zly dane ");
+        system("pause");
+    }
+    for (i=1; i<=N; i++){
+        printf("Wprowadz %d liczdu ",i);
+        scanf("%f",&wartosc);
+        sum += wartosc;
+        if (wartosc>0){
+            iloczyn = (iloczyn*(1.))*sqrt(wartosc);
+        }
+    }
+    serednia = (sum*1.)/N;
+    printf("\nSuma = %f",serednia);
+    printf("\nIloczyn = %f",iloczyn);
+}*/
+
+//------------------------------------------------------------
+
+/*Proszę wczytać 3 liczby i wyświetlić największą. Należy przeanalizować
+i uwzględnić w komunikatach wyjściowych następujące przypadki:
+• są to trzy różne liczby,
+• dwie liczby mają największą (tę samą) wartość,
+• wszystkie liczby są równe.*/
+/*int main(){
+    float a,b,c;
+    printf("\nPodaj 1 liczbe");
+    scanf("%f",&a);
+    printf("\nPodaj 2 liczbe");
+    scanf("%f",&b);
+    printf("\nPodaj 3 liczbe");
+    scanf("%f",&c);
+    if ((a!=b) || (b!=c) || (a!=c)){
+        printf("\nTo sa trzy rozne liczby ");
+
+    }
+    else{
+        printf("\nTo sa rowne liczby ");
+        system("pause");
+
+    }
+    if ((a>b)&&(a>c)){
+            printf("\nLiczba 1 jest najwieksza = %f",a);
+            system("pause");
+            }
+        else{
+                if ((b>a)&&(b>c)){
+                    printf("\nLiczba 2 jest najwieksza = %f",b);
+                    system("pause");
+                    }
+                else {
+                        if ((c>a)&&(c>b)){
+                            printf("\nLiczba 3 jest najwieksza = %f",c);
+                            system("pause");}
+                    }
+            }
+    if ((a==b)&&(a>c)){
+        printf("\nliczby 1,2 sa najwiekszy = %f",a );
+    }
+    else{
+        if ((a==c)&&(a>b)){
+            printf("\nliczby 1,3 sa najwiekszy = %f",a );
+        }
+        else{
+            printf("\nliczby 2,3 sa najwiekszy = %f",b );
+        }
+    }
+   return 0;
+}*/
+
+/*Proszę wczytać N wyników pomiarów(liczb), wartości końców przedziału
+<A,B> oraz obliczyć, wyświetlić sumę tych wyników pomiarów, które należą
+do <A, B>*/
+/*int main(){
+    int N, i;
+    float A,B,wartosc, sum;
+    printf("\nIle liczb ");
+    scanf("%d",&N);
+    printf("\nJaki poczatek przedzialu ");
+    scanf("%f",&A);
+    printf("\nJaki koniec przedzialu ");
+    scanf("%f",&B);
+    sum = 0;
+    for (i=1; i<=N; i++){
+        printf("Wprowadz %d liczbe ",i);
+        scanf("%f", &wartosc);
+        if ((wartosc>=A)&&(wartosc<=B)){
+            sum += wartosc;
+        }
+    }
+    printf("Suma liczb z przedzialu %f", sum);
+}*/
