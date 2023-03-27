@@ -1,0 +1,151 @@
+//Proszę wczytać N dowolnych liczb oraz:
+
+//1. obliczyć i wyświetlić sumę kwadratów liczb
+/*int main(){
+    int N, i;
+    float element, sum;
+    printf("\nIle elementow chcesz wprowadzic ");
+    scanf("%d",&N);
+    sum = 0;
+    if (N>0){
+        for (i=1; i<=N; i++){
+            printf("\nWprowadz %d element ",i);
+            scanf("%f",&element);
+            sum += pow(element, 2);
+        }
+    printf("Suma kwadratow liczb %f",sum);
+    }
+    else{
+        printf("\nWrpowadzono zly dane ");
+    }
+    return 0;
+}*/
+
+//2. obliczyć i wyświetlić średnią arytmetyczną liczb ujemnych,
+/*int main(){
+    int N, i, k;
+    float srednia, element, sum;
+    printf("\nile liczb ");
+    scanf("%d",&N);
+    k=0;
+    sum = 0;
+    if (N>0){
+        for (i=1;i<=N;i++){
+            printf("\nWprowadz %d liczbe",i);
+            scanf("%f",&element);
+            if (element<0){
+                k += 1;
+                sum += element;
+            }
+        }
+        srednia = (sum*1.0)/k;
+        printf("Srednie aryfmetyczne liczb ujemnych = %f ",srednia);
+    }
+    else{
+        printf("Wprowadzono zly dane");
+    }
+}*/
+
+//3. obliczyć i wyświetlić sumę liczb z przedziału <1,10>
+/*int main(){
+    int i, N;
+    float sum, element;
+    printf("\nIle licz chcesz wprowadzic ");
+    scanf("%d", &N);
+    sum = 0;
+    if (N>0){
+        for (i=1; i<=N; i++){
+            printf("Wprowadz %d liczbe ",i);
+            scanf("%f",&element);
+            if ((element>=1)&&(element<=10)){
+                sum += element;
+            }
+        }
+    printf("Suma elementow <1,10> = %f ",sum);
+    }
+    else{
+        printf("\nZly dane ");
+    }
+}*/
+
+//4. obliczyć i wyświetlić iloczyn co drugiej liczby (zaczynamy od pierwszej przeczytanej)
+/*int main(){
+    int i, N;
+    float element, iloczyn;
+    printf("\nIle liczb ");
+    scanf("%d",&N);
+    if (N<1){
+        printf("Wprowadzono zly dane\n");
+        system("pause");
+    }
+    iloczyn = 1;
+    for (i=1; i<=N; i++){
+        printf("Wprowadz %d liczbe ",i);
+        scanf("%f",&element);
+        if (i % 2 == 0){
+            iloczyn *= element;
+            }
+
+        }
+    printf("ilocyn co drugej liczby %f \n", iloczyn);
+    return 0;
+
+}*/
+
+//5. obliczyć i wyświetlić sumę liczb parzystych i sumę nieparzystych
+/*int main(){
+    int i, N, element, sum_p, sum_n;
+    printf("\nIle liczb ");
+    scanf("%d",&N);
+    if (N<1){
+        printf("Wprowadzono zly dane\n");
+        system("pause");
+    }
+    sum_p = 0;
+    sum_n = 0;
+    for (i=1; i<=N; i++){
+        printf("Wprowadz %d liczbe ",i);
+        scanf("%d",&element);
+        if (element%2 == 0){
+            sum_p += element;
+        }
+        else{
+            sum_n += element;
+        }
+    }
+    printf("\nSuma parzystych %d",sum_p);
+    printf("\nSuma nieparzystych %d",sum_n);
+    return 0;
+}*/
+
+//6. sprawdzić, czy liczby tworzą ciąg arytmetyczny - jeśli nie, to podać ile liczb
+//„nie pasowało”
+/*int main(){
+    int i, element_p, element, N, riznyca,riznyca_p, k;
+    printf("\nWprowadz ile elementow chcesz wprowadzic ");
+    scanf("%d",&N);
+    k=0;
+    if (N<3){
+        printf("\nZamalo danych ");
+        system("pause");
+    }
+    for (i=1; i<=N; i++){
+        printf("Wprowadz %d liczbe ",i);
+        scanf("%d",&element);
+        if (i==2){
+            riznyca= element-element_p;
+        }
+        if (riznyca != NULL ){
+            if ((element-element_p) != riznyca){
+                k += 1;
+            }
+        }
+        element_p = element;
+    }
+    if (k==0){
+        printf("\nTo jest ciag aryfmetyczny ");
+    }
+    else{
+        printf("\nTo nie jest ciag aryfmetyczny. Nie pasuja %d liczby ",k);
+    }
+}*/
